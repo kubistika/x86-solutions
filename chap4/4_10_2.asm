@@ -4,13 +4,12 @@ extern printf
 section .data
 	arr			dd 2, 1, 4, 3
 	arrayLength equ ($ - arr) / 4
-	fmt db '%d', 10, 13
 section .text
 
 main:
 	mov esi, dword arr
-
 	mov ecx, arrayLength/2  ; we're processing the array in pairs
+
 .loopArray:
 	mov eax, [esi]
 	xchg eax, [esi+4]
