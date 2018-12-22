@@ -9,11 +9,10 @@ section .text
 
 main:
 	; manipulate three
-	mov eax, [three]     ; eax = 12345678h
-	mov ax, [three+2]    ; eax = 12341234h
-	mov bx, word [three] ; bx = 5678h
-	mov [three], eax
-	mov [three+2], word bx
+	mov ax, word [three]     ; ax = 5678h
+	mov bx, word [three+2]   ; bx = 1234h
+	mov [three], bx
+	mov [three+2], ax
 
 
 	; print three
