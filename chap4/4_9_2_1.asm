@@ -14,7 +14,6 @@ main:
 	mov [three], bx
 	mov [three+2], ax
 
-
 	; print three
 	push dword [three]
 	push dword format
