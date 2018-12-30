@@ -1,5 +1,6 @@
 *
 
 # Allow
-!*/
+!*/*/
 !*/*.asm
+!*/Makefile
