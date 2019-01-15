@@ -10,11 +10,11 @@ Fib:
 	mov ebp, esp
 
 	pushad
-	mov esi, [ebp + 8]  ; pointer to array
-	mov ecx, [ebp + 12] ; N = loop counter
-	sub ecx, 2			; first two values are known
+	mov esi, [ebp + 8]     ; pointer to array
+	mov ecx, [ebp + 12]    ; N = loop counter
+	sub ecx, 2			   ; first two values are known
 
-	mov DWORD [esi], 1 ; first value is 1
+	mov DWORD [esi], 1     ; first value is 1
 	mov DWORD [esi + 4], 1 ; seconds value is 1 as well
 	mov eax, 1 ; a
 	mov ebx, 1 ; b
