@@ -43,7 +43,7 @@ CheckArrayParity:
 	pop ecx
 	pop ebx
 	pop ebp
-	ret 4
+	ret 8
 
 main:
 	push DWORD ARR1_LEN
